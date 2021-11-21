@@ -12,18 +12,18 @@ export default class App extends Component {
   }
 
   // eslint-disable-next-line
-  showModalHandle = () => {
-    document.body.classList.add('ov-h');
+  showModalHandler = () => {
+    document.body.classList.add('ov-h')
     this.setState({
       isShown: true
     })
   }
 
-  hideModalHandle = () => {
+  hideModalHandler = () => {
     this.setState({
       isShown: false
     })
-    document.body.classList.remove('ov-h');
+    document.body.classList.remove('ov-h')
   }
 
   toggleModalHandler = () => {
@@ -54,7 +54,7 @@ export default class App extends Component {
         {/* Modal component */}
           <Modal
             isOpen={this.state.isShown}
-            hideHandler={this.hideModalHandle}
+            hideHandler={this.hideModalHandler}
             title='Scrollable modal window'>
               {/* Child content */}
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, sit laudantium. Sed, dolorem atque veritatis
